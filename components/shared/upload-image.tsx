@@ -3,6 +3,7 @@ import { IMAGES } from "@/lib/constant";
 import Image from "next/image";
 import React, { useRef } from "react";
 import { ImageFile } from "./bg-remove";
+import { UploadCloud } from "lucide-react";
 
 interface Props {
   setImage: (image: ImageFile) => void;
@@ -24,15 +25,16 @@ const UploadImage = ({ setImage }: Props) => {
   };
 
   return (
-    <div className="flex items-center flex-col justify-center gap-y-3 ">
+    <div className="flex items-center flex-col border justify-center gap-y-3 ">
       <p className="text-lg font-semibold">
         Upload the an Image to Remove the background
       </p>
       <button
         onClick={handleButtonClick}
-        className="bg-blue-600 text-white py-2 px-8 rounded-3xl border-none hover:bg-blue-700 text-xl md:text-2xl font-bold"
+        className="bg-blue-600 text-white py-2 px-8 rounded-3xl border-none hover:bg-blue-700 text-xl md:text-2xl font-semibold flex items-center gap-x-4"
       >
-        Upload Image
+        <UploadCloud size={26} />
+        <span>Upload Image</span>
       </button>
       <input
         type="file"
