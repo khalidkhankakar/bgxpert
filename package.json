@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@huggingface/transformers": "^3.3.3",
     "@tabler/icons-react": "^3.30.0",
     "clsx": "^2.1.1",
     "eslint-config-prettier": "^10.0.1",
