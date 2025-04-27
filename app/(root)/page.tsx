@@ -4,6 +4,7 @@ import { ColourfulText } from "@/components/ui/colourful-text";
 import Image from "next/image";
 import { ActivityIcon } from "lucide-react";
 import { BentoGridDemo } from "@/components/shared/grid-pic";
+import NextFormButton from "@/components/shared/next-form-button";
 
 const HomePage = () => {
   return (
@@ -46,7 +47,7 @@ const HomePage = () => {
           />
         </div>
       </div>
-
+      <NextFormButton />
       <div className="mt-20">
         <h1 className="text-2xl md:text-4xl text-gray-600 font-bold text-center ">
           Try images on BGXpert
